@@ -1,735 +1,721 @@
-# Yapay Zeka Destekli Java Backend Geliştirici Yol Haritası
+# AI-Powered Java Backend Developer Roadmap
 
-Backend geliştirme öğreniminin geleceğine hoş geldin. Bu yol haritası, uygulamalı projeler, gerçek dünya mimarileri ve ChatGPT gibi yapay zekâ araçlarının gücünü bir araya getirerek sana özel rehberlik, örnekler ve geri bildirimler sunar.
+Welcome to the future of backend development learning. This roadmap combines hands-on projects, real-world architecture, and the power of AI like ChatGPT to provide guidance, examples, and feedback tailored to your needs.
 
-### 🔍 Bu Yol Haritası Nasıl Kullanılır
-- **Her bölüm**, öğrenilmesi gereken temel konuları, geliştirilecek küçük bir uygulamayı ve ChatGPT’ye yapıştırabileceğin hazır yapay zekâ komutlarını içerir.
-- **Bu komutları kullanarak**, kavramları netleştirebilir, kod örnekleri alabilir ve en iyi uygulamaları etkileşimli şekilde keşfedebilirsin.
-- **Kendi hızında ilerle** — bu yol haritası modüler ve esnektir.
-- **Daha fazla rehberliğe mi ihtiyacın var?** ChatGPT’ye şunları sorabilirsin: *"[konu] sonrasında ne öğrenmeliyim?", "[konu] hakkında bana bir quiz hazırlar mısın?", "Kodumu gözden geçirebilir misin?"*
+### 🔍 How to Use This Roadmap
+- **Each section** includes essential topics to learn, a mini app to build, and AI prompts you can copy/paste into ChatGPT.
+- **Use the prompts** to clarify concepts, get code snippets, and explore best practices interactively.
+- **Move at your own pace** — this roadmap is modular and flexible.
+- **Need more guidance?** Ask ChatGPT: *"What should I learn after [topic]? Can you quiz me on [topic]? Can you review my code?"*
 
-Haydi başlayalım!
+Let’s get started!
 
+## 1. Prompt Engineering First Steps
 
-## 1. Prompt Engineering'e İlk Adımlar
+**Learn:**
+- What is Prompt Engineering and why it's important for developers
+- Types of prompts: zero-shot, few-shot, role-based, contextual prompts
+- Prompt chaining and guiding AI step-by-step
+- Debugging AI prompts when results aren't optimal
 
-**Öğren:**
-- Prompt Engineering nedir ve geliştiriciler için neden önemlidir?
-- Prompt türleri: zero-shot, few-shot, rol tabanlı ve bağlamsal (contextual) promptlar
-- Prompt Chaining ve yapay zekâyı adım adım yönlendirme
-- Sonuçlar yeterli olmadığında AI promptlarını hata ayıklama (debugging)
+**Mini App:**
+> Prompt Generator for Code Tasks
+> - Build a CLI tool or web form that generates prompt templates for backend features
+> - Include variations for code generation, bug fixing, optimization, etc.
 
-**Mini Uygulama:**
-> Kod Görevleri için Prompt Oluşturucu  
-> - CLI aracı ya da web formu olarak, backend özelliklerine yönelik prompt şablonları oluşturan bir uygulama geliştir  
-> - Kod üretimi, hata düzeltme, optimizasyon gibi varyasyonları dahil et
-
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Zero-shot ve few-shot promptlar nedir? Her birine örnek ver.
-```
-```
-Bir yapay zekâyı (örneğin ChatGPT) Java'da CRUD API oluşturması için adım adım nasıl yönlendirebilirim?
+What are zero-shot and few-shot prompts? Give examples for each.
 ```
 ```
-JWT ve refresh token ile güvenli bir giriş (login) API'si oluşturan bir prompt yaz.
+How can I guide an AI like ChatGPT to generate a CRUD API in Java step by step?
 ```
 ```
-Kod üretimi için yazılan yapay zekâ promptlarını hata ayıklarken veya iyileştirirken dikkat edilmesi gereken en iyi uygulamalar nelerdir?
+Create a prompt that generates a secure login API with JWT and refresh tokens.
 ```
-
-Bu yol haritası, projeler üzerinden öğrenmek isteyen modern backend geliştiriciler için tasarlanmıştır. Yapay zekâ desteğiyle gerçek zamanlı geri bildirim alabilir, uygulamalı beceriler geliştirebilirsin. Statik bir konu listesi takip etmek yerine, her adımda mini projeler ve ChatGPT komutlarıyla etkileşimli bir öğrenme deneyimi yaşayacaksın.
+```
+What are the best practices for debugging or refining AI prompts for code generation?
+```
+This roadmap is designed for modern backend developers who want to learn through projects, get real-time feedback with AI assistance, and build practical skills. Rather than just following a static topic list, you'll engage with mini-projects and ChatGPT prompts at each step.
 
 ---
 
-## 2. Web Nasıl Çalışır?
+## 2. How the Web Works
 
-**Öğren:**
-- DNS, IP ve Domain sistemleri
-- HTTP, HTTPS protokolleri
-- Tarayıcı - Sunucu iletişimi
-- Request/Response döngüsü 
-- Web sunucuları (Nginx, Apache)
+**Learn:**
+- DNS, IP, and domain systems
+- HTTP, HTTPS protocols
+- Browser-server communication
+- Request/response cycle
+- Web servers (Nginx, Apache)
 
-**Mini Uygulama:**
-> `curl` ve `Postman` kullanarak istekleri simüle et ve yanıtları incele
+**Mini App:**
+> Use `curl` and `Postman` to simulate requests and inspect responses
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Bir kullanıcı tarayıcıya bir URL yazdığında adım adım ne olur?  
-HTTP, DNS, TCP/IP ve HTTPS süreçlerini dahil et.
-```
-```
-HTTP durum kodları nelerdir?  
-2xx, 3xx, 4xx, 5xx için örnekler ver.
+Explain step by step what happens when a user enters a URL in the browser.
+Include HTTP, DNS, TCP/IP, and HTTPS.
 ```
 ```
-CORS nedir?  
-Frontend ve Backend iletişiminde neden CORS hataları alırız?
+What are HTTP status codes? Give examples for 2xx, 3xx, 4xx, 5xx.
 ```
 ```
-CDN nasıl çalışır?  
-Ne zaman ve neden bir CDN kullanmalıyım?
+What is CORS? Why do we get CORS errors in frontend-backend communication?
 ```
-
+```
+How does a CDN work? When and why should I use one?
+```
 
 ---
 
-## 3. Git ve Sürüm Kontrolü
+## 3. Git & Version Control
 
-**Öğren:**
-- Git temelleri: `init`, `clone`, `add`, `commit`, `push`, `pull`, `merge`
-- Branching stratejileri 
-- `.gitignore`, rebase, stash kavramları
+**Learn:**
+- Git basics: `init`, `clone`, `add`, `commit`, `push`, `pull`, `merge`
+- Branching strategy
+- `.gitignore`, rebase, stash
 
-**Mini Uygulama:**
-> Backend projen için bir Git deposu başlat, özellik geliştirmeleri için branch’ler kullan
+**Mini App:**
+> Initialize a Git repo for your backend project, use branches for features
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Git merge çatışması (conflict) nasıl çözülür?
-```
-```
-Git rebase ile merge arasındaki farkı bir örnekle açıkla.
-```
-
-
----
-
-## 4. Java ve OOP Temelleri
-
-**Öğren:**
-- Java sözdizimi ve türler (primitives, wrappers)
-- Sınıflar ve Nesneler (Classes and Objects)
-- Kalıtım (inheritance), çok biçimlilik (polymorphism), kapsülleme (encapsulation), soyutlama (abstraction)
-- İstisna yönetimi (Exception handling): try-catch-finally, özel istisnalar
-- Java Koleksiyonları (List, Set, Map)
-- Arayüzler (interfaces) vs soyut sınıflar (abstract classes)
-- Java erişim denetleyicileri (public, private, protected)
-- Yapıcılar (constructors), `this` ve `super` anahtar kelimeleri
-- Overloading ve Overfitting kavramları
-- Static ve instance üyeler
-- Final anahtar kelimesinin kullanımı
-- Java Bellek Modeli (stack ve heap temel farkları)
-
-**Mini Uygulamalar:**
-> 1. `Öğrenci Yönetim Konsol Uygulaması` — Koleksiyonları kullanarak öğrenci ekle, listele ve sil
-> 2. `Basit Hesap Makinesi` — Farklı işlemler için yöntem aşırı yüklemesi (method overloading) kullan
-> 3. `Banka Sistemi` — Hesap, TasarrufHesabı gibi sınıflarla kalıtımı (inheritance) göster
-> 4. `Kütüphane Sistemi` — `Searchable`, `Borrowable` davranışları için arayüzler (interfaces) kullan
-
-**Yapay Zeka Komutları (AI Prompts):**
-```
-Bu sınıf tasarımı SOLID prensiplerine uygun mu? İyileştirme önerileri sun.
+How do I resolve a Git merge conflict?
 ```
 ```
-Java'da istisnaları (exceptions) nasıl düzgün bir şekilde yönetmeliyim?
+Explain the difference between Git rebase and merge with an example.
 ```
-```
-Java'da arayüzler (interfaces) ve soyut sınıflar (abstract classes) ne zaman kullanılmalı? Örnekler ver.
-```
-```
-Overloading ve Overfitting nasıl çalışır? Örneklerle açıkla.
-```
-```
-Java'nın bellek modeli nesne oluşturma ve çöp toplama (object creation and garbage collection) üzerinde nasıl bir etki yapar?
-```
-```
-HashMap, LinkedHashMap ve TreeMap arasındaki farkları ve kullanım senaryolarını karşılaştır.
-```
-```
-OOP prensiplerine göre küçük bir kütüphane sistemi için UML sınıf diyagramı oluşturabilir misin? İyileştirme önerileri sun.
-```
-
 
 ---
 
-## 5. Spring Boot ile REST API'leri Oluşturma
+## 4. Java & OOP Fundamentals
 
-**Öğren:**
-- Spring Boot temelleri (otomatik yapılandırma, açıklamalar/annotasyonlar)
-- Controller-Service-Repository yapısı
-- RESTful tasarım: HTTP fiilleri (verbs), durum kodları, URI isimlendirmesi
-- `@RequestBody`, `@PathVariable`, `@RequestParam` ile veri bağlama
-- ResponseEntity ve özel yanıtlar
-- Spring Data ile sayfalama (pagination) ve sıralama (sorting)
-- SpringDoc ile Swagger/OpenAPI belgeleri
-- REST API'leri için exception yönetimi
+**Learn:**
+- Java syntax and types (primitives, wrappers)
+- Classes and objects
+- Inheritance, polymorphism, encapsulation, abstraction
+- Exception handling (try-catch-finally, custom exceptions)
+- Java Collections (List, Set, Map)
+- Interfaces vs abstract classes
+- Java access modifiers (public, private, protected)
+- Constructors, `this` and `super` keywords
+- Method overloading and overriding
+- Static vs instance members
+- Final keyword usage
+- Java Memory Model (stack vs heap basics)
 
-**Mini Uygulamalar:**
-> 1. `Kitapçı API` — Kitaplar için tam CRUD işlemleri
-> 2. `Görev Takip API` — Sıralama, sayfalama ve filtreleme ekleyin
-> 3. `İletişim Yönetim API` — İç içe kaynaklar, örneğin: /users/{id}/contacts
+**Mini Apps:**
+> 1. `Student Management Console App` — Add, list, and remove students using collections
+> 2. `Simple Calculator` — Use method overloading for different operations
+> 3. `Banking System` — Demonstrate inheritance with Account, SavingsAccount, etc.
+> 4. `Library System` — Use interfaces for `Searchable`, `Borrowable` behaviors
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Kitapları yönetmek için GET, POST, PUT, DELETE uç noktalarını (endpoints) içeren RESTful bir API tasarımı yap.
-```
-```
-Spring Boot'ta ResponseEntity kullanarak özel durum kodu ve gövde (body) nasıl döndürebilirim?
+Is this class design SOLID-compliant? Suggest improvements.
 ```
 ```
-Spring Boot API'si için Swagger belgelendirmesi oluştur.
+How should I handle exceptions properly in Java?
 ```
 ```
-Spring Boot'ta layered architecture yapılandırmak için en iyi uygulama nedir?
+Give examples of when to use interfaces vs abstract classes in Java.
 ```
 ```
-Spring Data ile bir REST endpoint'inde sayfalama ve sıralama nasıl uygulanır?
+Explain method overloading and overriding with examples.
 ```
 ```
-@ControllerAdvice kullanarak REST API'de hata yönetimini nasıl yapabilirim?
-```
-
-**Öğren:**
-- Spring Boot temelleri
-- MVC yapısı: controller, service, repository
-- REST prensipleri
-
-**Mini Uygulama:**
-> `Kitapçı REST API` — CRUD işlemleri
-
-**Yapay Zeka Komutları (AI Prompts):**
-```
-Spring Boot'ta temiz REST controller'ları nasıl tasarlarım?
+How does Java's memory model affect object creation and garbage collection?
 ```
 ```
-Spring API'm için Swagger belgelendirmesi oluştur.
+Compare HashMap, LinkedHashMap, and TreeMap with use cases.
 ```
-
+```
+Can you generate a UML class diagram for a small library system with OOP principles? Suggest improvements.
+```
+```
+How should I handle exceptions properly in Java?
+```
 
 ---
 
-## 6. Veritabanları ve JPA
+## 5. Building REST APIs with Spring Boot
 
-**Öğren:**
-- SQL temelleri: SELECT, INSERT, UPDATE, DELETE
-- İleri düzey sorgular: JOIN'ler, GROUP BY, subqueries, indexes
-- PostgreSQL / MySQL kurulumu ve CLI araçları
-- Veritabanı tasarımı: normalizasyon, ER diyagramları, ilişkiler
-- Spring Data JPA entegrasyonu
-- JPA entity ilişkileri: OneToMany, ManyToMany, OneToOne
+**Learn:**
+- Spring Boot basics (auto-configuration, annotations)
+- Controller-Service-Repository structure
+- RESTful design: HTTP verbs, status codes, URI naming
+- Data binding with `@RequestBody`, `@PathVariable`, `@RequestParam`
+- ResponseEntity and custom responses
+- Pagination and sorting with Spring Data
+- Swagger/OpenAPI documentation with SpringDoc
+- Exception handling for REST APIs
+
+**Mini Apps:**
+> 1. `Book Store API` — full CRUD operations for books
+> 2. `Task Tracker API` — add sorting, pagination, filtering
+> 3. `Contact Management API` — nested resources, e.g., /users/{id}/contacts
+
+**AI Prompts:**
+```
+Design a RESTful API for managing books, including GET, POST, PUT, DELETE endpoints.
+```
+```
+How do I use ResponseEntity in Spring Boot to return custom status and body?
+```
+```
+Generate Swagger documentation for a Spring Boot API.
+```
+```
+What’s the best practice for structuring layered architecture in Spring Boot?
+```
+```
+How do I implement pagination and sorting in a REST endpoint with Spring Data?
+```
+```
+Show me how to handle errors in a REST API using @ControllerAdvice.
+```
+
+**Learn:**
+- Spring Boot basics
+- MVC structure: controller, service, repository
+- REST principles
+
+**Mini App:**
+> `Book Store REST API` with CRUD operations
+
+**AI Prompts:**
+```
+How do I design clean REST controllers in Spring Boot?
+```
+```
+Generate Swagger documentation for my Spring API.
+```
+
+---
+
+## 6. Databases & JPA
+
+**Learn:**
+- SQL basics: SELECT, INSERT, UPDATE, DELETE
+- Advanced queries: JOINs, GROUP BY, subqueries, indexes
+- PostgreSQL / MySQL setup and CLI tools
+- Database design: normalization, ER diagrams, relationships
+- Spring Data JPA integration
+- JPA entity relationships: OneToMany, ManyToMany, OneToOne
 - Lazy vs Eager loading
-- İşlemler (transactions), izolasyon seviyeleri ve ACID prensipleri
-- Sorgu optimizasyonu (Query optimization ) ve indeksleme stratejileri
+- Transactions, isolation levels, and ACID principles
+- Query optimization and indexing strategies
 
-**Mini Uygulama:**
-> `Kütüphane Yönetim Sistemi`
-> - Varlıklar: Kitap, Yazar, Ödünç Alan, Ödünç
-> - Tabloları ve ilişkileri oluştur
-> - Spring Data JPA ile özel sorgular kullan
+**Mini App:**
+> `Library Management System`
+> - Entities: Book, Author, Borrower, Loan
+> - Create tables and relationships
+> - Use custom queries with Spring Data JPA
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Kitaplar, yazarlar ve ödünç alanlar için bir Kütüphane Yönetim Sistemi için ER diyagramı tasarla.
-```
-```
-SQL örnekleriyle inner join, left join ve full join arasındaki farkı açıkla.
+Design an ER diagram for a Library Management System with books, authors, and borrowers.
 ```
 ```
-JPA'da Lazy ve Eager fetching arasında nasıl seçim yaparım?
+Explain the difference between inner join, left join, and full join with SQL examples.
 ```
 ```
-Spring Data JPA'da @Query kullanarak tüm gecikmiş ödünçleri getiren özel bir SQL sorgusu yaz.
+How do I choose between Lazy and Eager fetching in JPA?
 ```
 ```
-İşlemler (transactions ilişkisel veritabanlarında) nasıl çalışır? İzolasyon seviyelerini gerçek dünya örnekleriyle açıkla.
+Write a custom SQL query using @Query in Spring Data JPA to get all overdue loans.
 ```
 ```
-PostgreSQL'de nasıl bir indeks oluştururum ve ne zaman kullanmalıyım?
+How do transactions work in relational databases? Explain isolation levels with real-world examples.
+```
+```
+How can I create an index in PostgreSQL and when should I use one?
 ```
 
-**Öğren:**
-- SQL sorguları: SELECT, JOIN, GROUP BY, vb.
-- PostgreSQL / MySQL temelleri
+**Learn:**
+- SQL queries: SELECT, JOIN, GROUP BY, etc.
+- PostgreSQL / MySQL basics
 - Spring Data JPA
-- Entity ilişkileri: OneToMany, ManyToMany
-- İşlemler ve entity yaşam döngüsü
+- Entity relationships: OneToMany, ManyToMany
+- Transactions and entity lifecycle
 
-**Mini Uygulama:**
-> `İlişkisel yapıya sahip Kütüphane Yönetim Sistemi`
+**Mini App:**
+> `Library Management System` with relational structure
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-JPA'da ilişkileri (OneToMany, ManyToMany) nasıl tanımlarım?
-```
-```
-Hibernate'de N+1 sorununu nasıl çözerim?
+How do I define relationships in JPA (OneToMany, ManyToMany)?
 ```
 ```
-Bu SQL sorgusunu performans için nasıl optimize edebilirim?
+How do I solve the N+1 problem in Hibernate?
 ```
-
+```
+Can you optimize this SQL query for performance?
+```
 
 ---
 
-## 7. Kimlik Doğrulama ve Güvenlik
+## 7. Authentication & Security
 
-**Öğren:**
-- Kimlik doğrulama (Authentication) ve yetkilendirme (Authorization) prensipleri
-- Spring Security mimarisi
+**Learn:**
+- Principles of Authentication vs Authorization
+- Spring Security architecture
 - FilterChain, SecurityContext, AuthenticationManager
-- UserDetailsService ve PasswordEncoder
-- Stateless kimlik doğrulama JWT (JSON Web Token) ile
-- Refresh token stratejisi
-- Rol tabanlı ve izin tabanlı erişim kontrolü
-- Yöntemlere güvenlik eklemek için anotasyonlar (`@PreAuthorize`, `@Secured`)
-- CSRF koruması, güvenli API'lerde CORS
-- OAuth2 temelleri (isteğe bağlı ileri seviye)
+- UserDetailsService and PasswordEncoder
+- Stateless authentication with JWT (JSON Web Token)
+- Refresh token strategy
+- Role-based and permission-based access control
+- Securing endpoints with annotations (`@PreAuthorize`, `@Secured`)
+- CSRF protection, CORS in secure APIs
+- OAuth2 basics (optional advanced)
 
-**Mini Uygulama:**
-> `Güvenli Kitap Mağazası API'si`
-> - Kayıt/giriş uç noktaları ile BCrypt hashing
-> - JWT token oluşturma + doğrulama
-> - Sadece admin ve sadece kullanıcı rotaları
-> - Refresh token implementasyonu (isteğe bağlı)
+**Mini App:**
+> `Secure Book Store API`
+> - Register/login endpoints with BCrypt hashing
+> - JWT token generation + verification
+> - Admin-only and user-only routes
+> - Refresh token implementation (optional)
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Security filter chain'i, gelen bir isteği nasıl işler?
-```
-```
-JWT ve BCrypt kullanarak Spring Boot'ta bir giriş ve kayıt kontrolörü oluştur.
+How does the Spring Security filter chain process an incoming request?
 ```
 ```
-Belirli bir kontrolör metodunu sadece ADMIN kullanıcıları için nasıl güvence altına alırım?
+Generate a login and register controller in Spring Boot using JWT and BCrypt.
 ```
 ```
-Stateless ve stateful kimlik doğrulama arasındaki fark nedir?
+How can I secure a specific controller method for ADMIN users only?
 ```
 ```
-Spring Boot JWT kimlik doğrulama sisteminde refresh token'ları nasıl implement edebilirim?
+What's the difference between stateless and stateful authentication?
 ```
 ```
-Güvenli bir Spring Boot backend'de CORS'u nasıl yapılandırır ve test ederim?
+Implement refresh tokens in a Spring Boot JWT authentication system.
+```
+```
+Explain how to configure and test CORS in a secure Spring Boot backend.
 ```
 
-**Öğren:**
+**Learn:**
 - Spring Security
-- JWT tabanlı kimlik doğrulama
-- BCrypt ile parola hashing
+- JWT-based authentication
+- Password hashing with BCrypt
 
-**Mini Uygulama:**
-> `JWT Login/Kayıt API'si` rol tabanlı erişim ile
+**Mini App:**
+> `JWT Login/Register API` with role-based access
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Security filter chain'i nasıl çalışır?
+How does the Spring Security filter chain work?
 ```
 ```
-JWT kimlik doğrulama ve refresh token'ları nasıl implement ederim?
+Implement JWT authentication with refresh tokens.
 ```
-
 
 ---
 
-## 8. Docker ve CI/CD
+## 8. Docker & CI/CD
 
-**Öğren:**
-- Java ve Spring Boot için Dockerfile yazma
-- Yerel geliştirme için docker-compose kullanma
-- Konteynerleri bağlama (Spring Boot + PostgreSQL)
-- Çok aşamalı Docker build işlemleri
-- Temel Docker ağ yapısı ve volümleri
-- GitHub Actions iş akışları oluşturma
-- CI/CD pipeline'larında testleri çalıştırma
-- GitHub Actions ile Heroku, Render veya DigitalOcean'a dağıtım yapma
+**Learn:**
+- Writing Dockerfiles for Java and Spring Boot
+- Using docker-compose for local development
+- Connecting containers (Spring Boot + PostgreSQL)
+- Multi-stage Docker builds
+- Basic Docker networking and volumes
+- Creating GitHub Actions workflows
+- Running tests in CI/CD pipelines
+- Deploying to Heroku, Render, or DigitalOcean via GitHub Actions
 
-**Mini Uygulamalar:**
+**Mini Apps:**
 > 1. `Dockerized Book Store API`
-> 2. `docker-compose stack` — uygulama + DB + pgAdmin
-> 3. `CI Pipeline` — test et, build et, ve GitHub Actions kullanarak dağıtım yap
+> 2. `docker-compose stack` — app + DB + pgAdmin
+> 3. `CI Pipeline` — test, build, and deploy using GitHub Actions
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-OpenJDK 17'de çalışan bir Spring Boot uygulaması için bir Dockerfile yaz.
-```
-```
-Spring Boot uygulamamı PostgreSQL ile docker-compose kullanarak nasıl bağlarım?
+Write a Dockerfile for a Spring Boot app that runs on OpenJDK 17.
 ```
 ```
-Testleri çalıştırmak ve prodüksiyona dağıtım yapmak için bir GitHub Actions iş akışı oluştur.
+How do I connect my Spring Boot app to PostgreSQL using docker-compose?
 ```
 ```
-Docker'da çok aşamalı build işlemlerinin amacı nedir?
+Create a GitHub Actions workflow to run tests and deploy to production on push.
 ```
 ```
-Konteynerlere ortam değişkenlerini güvenli bir şekilde nasıl geçiririm?
-```
-
-**Öğren:**
-- Dockerfile ve docker-compose
-- Spring Boot ve DB için Docker kullanma
-- CI/CD için GitHub Actions
-
-**Mini Uygulama:**
-> API'nizi konteynerleştirip PostgreSQL konteyneriyle bağlayın
-
-**Yapay Zeka Komutları (AI Prompts):**
-```
-Spring Boot uygulaması için optimize edilmiş bir Dockerfile oluştur.
+What is the purpose of multi-stage builds in Docker?
 ```
 ```
-Bir Java backend'i build edip dağıtmak için GitHub Actions iş akışını göster.
+How do I pass environment variables securely to containers?
 ```
 
+**Learn:**
+- Dockerfile and docker-compose
+- Dockerizing Spring Boot & DB
+- GitHub Actions for CI/CD
 
----
+**Mini App:**
+> Containerize your API and connect it with a PostgreSQL container
 
-## 9. Loglama, Doğrulama ve Hata Yönetimi
-
-**Öğren:**
-- SLF4J & Logback ile yapılandırılmış loglama
-- Log seviyeleri: INFO, WARN, ERROR, DEBUG, TRACE
-- Spring Boot'ta istisna yönetimi desenleri
-- `@ControllerAdvice` ile global hata yöneticisi
-- Bean Validation ile giriş doğrulama (`@Valid`, `@NotNull`, `@Size` vb.)
-- Özel doğrulayıcılar ve kısıtlama mesajları
-- Hassas verileri güvenli bir şekilde loglama
-- Doğrulama mesajları için uluslararasılaştırma (i18n) (isteğe bağlı)
-
-**Mini Uygulamalar:**
-> 1. `Doğrulama ile Login API` — giriş hatasında doğru mesajlar döndür
-> 2. `Hata Loglama Demo` — kullanıcı davranışlarını ve başarısız işlemleri logla
-> 3. `Özel Doğrulayıcı Örneği` — e-posta domainleri veya şifreler için doğrulayıcı yaz
-
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Boot'ta bir request DTO'sunda @Valid ve Bean Validation anotasyonlarını nasıl kullanırım?
+Create an optimized Dockerfile for a Spring Boot app.
 ```
 ```
-@ControllerAdvice kullanarak global bir hata yöneticisi nasıl oluştururum?
+Show me a GitHub Actions workflow to build and deploy a Java backend.
 ```
-```
-Bir backend uygulamasında loglama için en iyi uygulamalar nelerdir?
-```
-```
-Şifreler gibi hassas bilgilerin loglanmasını nasıl engellerim?
-```
-```
-Kullanıcı adının sadece küçük harfler içerip içermediğini kontrol etmek için bir özel doğrulayıcı yaz.
-```
-```
-Spring Boot'ta doğrulama hata mesajlarını nasıl uluslararasılaştırırım?
-```
-
-**Öğren:**
-- SLF4J & Logback ile loglama
-- `@ControllerAdvice` ile global hata yönetimi
-- Hibernate Validator ile giriş doğrulama
-
-**Mini Uygulama:**
-> `Login API` — özel hata yanıtları ve doğrulama ile
-
-**Yapay Zeka Komutları (AI Prompts):**
-```
-Spring Boot'ta hataları ve kullanıcı işlemlerini nasıl loglarım?
-```
-```
-Gelen request body'lerini doğrulamanın en iyi yolu nedir?
-```
-
 
 ---
 
-## 10. Test Etme ve Mocking
+## 9. Logging, Validation, Error Handling
 
-**Öğren:**
-- Birim testi prensipleri: arrange-act-assert
-- Entegrasyon testi vs birim testi (Integration vs unit testing)
-- JUnit 5 ile test yazma
-- Bağımlılıkları mock'lamak için Mockito kullanımı
-- Spring bileşenlerini test etme: controller'lar, servisler, repository'ler
-- Spring Boot test anotasyonları: `@WebMvcTest`, `@DataJpaTest`, `@SpringBootTest`
-- Test kapsamı stratejileri ve araçları (örneğin, JaCoCo)
+**Learn:**
+- Structured logging with SLF4J & Logback
+- Log levels: INFO, WARN, ERROR, DEBUG, TRACE
+- Exception handling patterns in Spring Boot
+- Global error handler using `@ControllerAdvice`
+- Input validation with Bean Validation (`@Valid`, `@NotNull`, `@Size`, etc.)
+- Custom validators and constraint messages
+- Logging sensitive data safely
+- Internationalization (i18n) for validation messages (optional)
+
+**Mini Apps:**
+> 1. `Login API with Validation` — return proper messages on input error
+> 2. `Error Logging Demo` — log user behavior and failed operations
+> 3. `Custom Validator Example` — write a validator for email domains or passwords
+
+**AI Prompts:**
+```
+How do I use @Valid and Bean Validation annotations in a Spring Boot request DTO?
+```
+```
+Show how to create a global error handler using @ControllerAdvice.
+```
+```
+What are best practices for logging in a backend application?
+```
+```
+How do I avoid logging sensitive information like passwords?
+```
+```
+Write a custom validator to check if a username contains only lowercase letters.
+```
+```
+How can I internationalize validation error messages in Spring Boot?
+```
+
+**Learn:**
+- SLF4J & Logback logging
+- Global error handling with `@ControllerAdvice`
+- Input validation with Hibernate Validator
+
+**Mini App:**
+> `Login API` with custom error responses and validation
+
+**AI Prompts:**
+```
+How do I log errors and user actions in Spring Boot?
+```
+```
+What’s the best way to validate incoming request bodies?
+```
+
+---
+
+## 10. Testing & Mocking
+
+**Learn:**
+- Principles of unit testing: arrange-act-assert
+- Integration vs unit testing
+- Writing tests in JUnit 5
+- Using Mockito for mocking dependencies
+- Testing Spring components: controllers, services, repositories
+- Spring Boot test annotations: `@WebMvcTest`, `@DataJpaTest`, `@SpringBootTest`
+- Test coverage strategies and tools (e.g., JaCoCo)
 - Test-Driven Development (TDD)
-- Parametreli ve uç durum testleri yazma
+- Writing parameterized and edge case tests
 
-**Mini Uygulama:**
+**Mini App:**
 > `Book Store Test Suite`
-> - Servis metotları için birim testleri yaz, mock'ları kullan
-> - API endpoint'leri için entegrasyon testleri yaz
-> - Veritabanı davranışlarını `@DataJpaTest` ile doğrula
-> - `TestRestTemplate` veya `MockMvc` kullanarak API çağrılarını simüle et
+> - Write unit tests for service methods using mocks
+> - Write integration tests for the API endpoints
+> - Validate database behavior using `@DataJpaTest`
+> - Use `TestRestTemplate` or `MockMvc` to simulate API calls
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-JUnit 5'te bir toplam sipariş fiyatı hesaplayan metot için birim testi nasıl yazılır?
-```
-```
-Spring servisi testinde Mockito kullanarak bir repository nasıl mock'lanır? Örnek ver.
+How do I write a unit test in JUnit 5 for a method that calculates total order price?
 ```
 ```
-Spring Boot'ta `@SpringBootTest` ve `@WebMvcTest` ne zaman kullanılmalı?
+Give an example of mocking a repository using Mockito in a Spring service test.
 ```
 ```
-Spring Boot REST controller'ında hata senaryolarını (örneğin, 404, 500) nasıl test ederim?
+When should I use @SpringBootTest vs @WebMvcTest in Spring Boot?
 ```
 ```
-Kullanıcı kayıt girişini doğrulayan bir metot için test edilmesi gereken uç durumlar (edge case'ler) öner.
+How do I test error scenarios (e.g., 404, 500) in a Spring Boot REST controller?
 ```
 ```
-Test kapsamını nasıl ölçerim ve backend uygulamaları için iyi bir hedef nedir?
+Suggest edge cases I should test for a method that validates user registration input.
+```
+```
+How do I measure test coverage and what is a good target for backend apps?
 ```
 
-**Öğren:**
-- JUnit 5 temelleri
-- Birim testi vs entegrasyon testi
-- Mockito ile mocking
+**Learn:**
+- JUnit 5 basics
+- Unit testing vs integration testing
+- Mocking with Mockito
 
-**Mini Uygulama:**
-> `BookService` sınıfı için birim testleri yaz
+**Mini App:**
+> Write unit tests for a `BookService` class
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Bu Spring Boot servisi için Mockito kullanarak birim testleri yaz.
+Write unit tests for this Spring Boot service using Mockito.
 ```
 ```
-Controller endpoint'lerini nasıl test ederim?
+How do I test controller endpoints?
 ```
 
 ---
 
 ## 11. Observability & Monitoring
 
-**Öğren:**
-- Spring Boot Actuator: yerleşik endpoint'ler ve sağlık kontrolleri
-- Micrometer metrikleri: sayıcılar, zamanlayıcılar, göstergeler
-- Prometheus entegrasyonu ile Spring Boot
-- Prometheus & Grafana stack kurma
-- İş mantığı için özel metrikler oluşturma
-- Performans görselleştirme: yanıt süresi, istek oranı, hata oranı
-- Prometheus ve Grafana'da uyarılar (örneğin, yüksek 500 hataları)
-- Yapısal logging ve korelasyon ID'leri
-- Zipkin ile dağıtık izleme temelleri (isteğe bağlı)
+**Learn:**
+- Spring Boot Actuator: built-in endpoints and health checks
+- Micrometer metrics: counters, timers, gauges
+- Prometheus integration with Spring Boot
+- Setting up Prometheus & Grafana stack
+- Creating custom metrics for business logic
+- Visualizing performance: response time, request rate, error rate
+- Alerting in Prometheus and Grafana (e.g., high 500 errors)
+- Structured logging and correlation IDs
+- Distributed tracing basics with Zipkin (optional)
 
-**Mini Uygulama:**
+**Mini App:**
 > `Monitoring-Enabled Book API`
-> - Spring Boot Actuator endpoint'lerini ekle
-> - Micrometer kullanarak Prometheus'a metrikler aç
-> - Kullanıcı kayıtlarının sayısı için özel bir sayaç ekle
-> - API metriklerini görselleştirmek için Grafana paneli oluştur
-> - Hata oranı 1 dakikalık aralıkta %5'i aşarsa uyarı oluştur
+> - Add Spring Boot Actuator endpoints
+> - Expose metrics to Prometheus using Micrometer
+> - Add custom counter for number of user registrations
+> - Set up Grafana dashboard to visualize API metrics
+> - Create alert when error rate exceeds 5% in 1 minute interval
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Boot Actuator endpoint'lerini güvenli bir şekilde nasıl etkinleştirir ve açığa çıkarırım?
-```
-```
-API sağlığını izlemek için en faydalı Micrometer metrikleri nelerdir?
+How do I enable and expose Spring Boot Actuator endpoints securely?
 ```
 ```
-Micrometer kullanarak kullanıcı kayıtları sayısı gibi özel bir metrik örneği ver.
+What are the most useful Micrometer metrics for monitoring API health?
 ```
 ```
-Prometheus'u Spring Boot uygulamasından metrikleri alacak şekilde nasıl yapılandırırım?
+Give an example of a custom metric (e.g., number of registered users) using Micrometer.
 ```
 ```
-Her endpoint için istek gecikmesini görselleştirmek için Grafana panosu oluştur.
+How do I configure Prometheus to scrape metrics from a Spring Boot app?
 ```
 ```
-Prometheus'ta HTTP 500 hata artışları için nasıl uyarı oluştururum?
+Set up a Grafana panel to visualize request latency for each endpoint.
 ```
 ```
-Metrikler ile izleme arasındaki fark nedir? Dağıtık izlemeyi ne zaman kullanmalıyım?
+How do I create an alert in Prometheus for HTTP 500 error spikes?
 ```
 ```
-Hizmetler arası istek izleme için loglara trace ID ve span ID'yi nasıl dahil ederim?
+What's the difference between metrics and tracing? When should I use distributed tracing?
+```
+```
+Explain how to include trace ID and span ID in logs for request tracking across services.
 ```
 
-**Öğren:**
-- Spring Boot Actuator endpoint'leri
-- Prometheus & Grafana kurulumu
-- Özel uygulama metrikleri
+**Learn:**
+- Spring Boot Actuator endpoints
+- Prometheus & Grafana setup
+- Custom application metrics
 
-**Mini Uygulama:**
-> API metriklerini Grafana panosunda açığa çıkar ve görselleştir
+**Mini App:**
+> Expose and visualize API metrics in Grafana dashboard
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Boot uygulamamda Prometheus metriklerini nasıl eklerim?
+How do I add Prometheus metrics to my Spring Boot app?
 ```
 ```
-Hata oranları ve yanıt sürelerini izlemek için Grafana'da bir pano oluştur.
+Create a dashboard in Grafana to monitor error rates and response times.
 ```
 
 ---
 
-## 12. Performans Optimizasyonu & Önbellekleme
+## 12. Performance Optimization & Caching
 
-**Öğren:**
-- JVM performans ayarları (heap boyutu, GC ayarları)
-- Garbage Collection türlerini anlama (Serial, G1, ZGC)
-- JVM profil oluşturma (VisualVM, JFR, YourKit)
-- Uygulama başlatma süresi ve bellek kullanımı ölçümü
-- API yanıt süresi optimizasyon stratejileri
-- Performans izleme için Spring Boot actuator metrikleri
-- Önbellekleme (caching) kavramlarına giriş: bellek içi (in-memory) ve dağıtık (distributed)
-- Caffeine ile önbellekleme (yerel, near-cache)
-- Redis ile Spring Cache soyutlaması kullanarak önbellekleme
-- Önbellek temizleme politikaları ve TTL ayarları
+**Learn:**
+- JVM performance tuning (heap size, GC tuning flags)
+- Understanding the Garbage Collection types (Serial, G1, ZGC)
+- JVM profiling with VisualVM, JFR, YourKit
+- Measuring application startup time and memory usage
+- API response time optimization strategies
+- Spring Boot actuator metrics for performance monitoring
+- Introduction to caching concepts: in-memory vs distributed
+- Caching with Caffeine (local, near-cache)
+- Caching with Redis using Spring Cache abstraction
+- Cache eviction policies and TTL settings
 
-**Mini Uygulamalar:**
-> 1. `Performans Ayarları Yapılmış Book API` — Yanıt süresi günlükleri, bellek kullanımı istatistikleri ekle
-> 2. `Caffeine ile Önbelleğe Alınmış Ürün Servisi` — Fiyat aramaları için yerel önbellekleme
-> 3. `Redis ile Önbelleğe Alınmış Kimlik Doğrulama` — Token doğrulama veya kullanıcı rollerini önbellek katmanı aracılığıyla yap
+**Mini Apps:**
+> 1. `Performance Tuned Book API` — Add response time logging, memory usage stats
+> 2. `Caffeine Cached Product Service` — Cache price lookups locally
+> 3. `Redis Cached Authentication` — Token verification or user roles via cache layer
 
-**Yapay Zeka Komutları (AI Prompts):**
+**AI Prompts:**
 ```
-Spring Boot performansı için JVM heap ve GC ayarlarını nasıl yapabilirim?
-```
-```
-G1GC ile ZGC arasındaki farkları açıklayın. Her birini ne zaman kullanmalıyım?
+How can I tune JVM heap and GC settings for optimal Spring Boot performance?
 ```
 ```
-VisualVM veya Java Flight Recorder kullanarak bir Java uygulamasını nasıl profil oluştururum?
+Explain the difference between G1GC and ZGC. When should I use each?
 ```
 ```
-Kullanıcı oturumları veya JWT verileri için en iyi önbellekleme uygulamaları nelerdir?
+How do I profile a Java application using VisualVM or Java Flight Recorder?
 ```
 ```
-Spring Boot'ta Caffeine kullanarak metod düzeyinde önbellekleme nasıl uygulayabilirim?
+What are best practices for caching user sessions or JWT data?
 ```
 ```
-Spring Boot uygulamasında @Cacheable ve TTL yapılandırmaları kullanarak Redis önbellekleme örneği ver.
+How can I implement method-level caching using Caffeine in Spring Boot?
 ```
 ```
-Bellek içi (in-memory) ve dağıtık (distributed) önbellek arasındaki fark nedir? Artıları ve eksileri nelerdir?
+Demonstrate Redis caching in a Spring Boot app using @Cacheable and TTL configs.
+```
+```
+What is the difference between in-memory and distributed caching? Pros and cons?
 ```
 
+## Keep Learning
 
-## Öğrenmeye Devam Et
-
-**Öğren:**
-- Clean Architecture prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
-- Domain-Driven Design (DDD) temelleri
-- Event-driven architecture: asenkron mesajlaşma, event sourcing
-- Apache Kafka veya RabbitMQ ile pub/sub sistemleri
-- Mikroservisler: sınırlar, iletişim, servis keşfi
-- API Gateway deseni ve araçları (ör. Spring Cloud Gateway)
-- Circuit Breaker deseni ve Resilience4j veya Hystrix kullanımı
-- Servis Kaydı (ör. Eureka), Yük Dengeleme ve Hata Toleransı
-- Advanced deployment: Blue/Green, Canary sürümleri, Özellik bayrakları (Feature flags)
-- Kubernetes (isteğe bağlı ileri seviye)
-- **Prompt Engineering**: Yapay zeka destekli yazılım geliştirme için prompt oluşturmayı öğrenmek
-  - Bağlamsal prompt tasarımı
+**Learn:**
+- Clean Architecture principles: separation of concerns, layers, use cases
+- Domain-Driven Design (DDD) fundamentals
+- Event-driven architecture: async messaging, event sourcing
+- Apache Kafka or RabbitMQ for pub/sub systems
+- Microservices: boundaries, communication, service discovery
+- API Gateway pattern and tools (e.g., Spring Cloud Gateway)
+- Circuit Breaker pattern with Resilience4j or Hystrix
+- Service Registry (e.g., Eureka), Load Balancing, and Fault Tolerance
+- Advanced deployment: Blue/Green, Canary releases, Feature flags
+- Kubernetes (optional advanced)
+- **Prompt Engineering**: mastering prompt crafting for AI-assisted development
+  - Designing contextual prompts
   - Zero-shot vs few-shot prompting
-  - Prompt zincirleme ve şablonlama
-  - Rol promptları ve sistem talimatlarının kullanımı
-  - Kod üretimi ve dokümantasyon için prompt hata ayıklama
+  - Prompt chaining and templating
+  - Role prompting and system instruction usage
+  - Debugging prompts for code generation and documentation
 
-**Mini Uygulama:**
-> `Event-Driven Sipariş Yönetim Sistemi`
-> - Sipariş servisi Kafka'ya yayın yapar
-> - Stok servisi dinler ve stok günceller
-> - API Gateway kullanarak kamuya açık uç noktalar sağlanır
-> - Stok kontrol uç noktası için Circuit Breaker ekle
-> - ChatGPT kullanarak tam özellikleri oluşturmak için prompt'ları yaz ve geliştir (ör. giriş akışı, Swagger belgeleri, Dockerfile)
-
-**Yapay Zeka Komutları (AI Prompts):**
-```
-Clean Architecture yapısını pratik bir Java + Spring Boot örneği ile açıkla.
-```
-```
-Mikroservis tabanlı bir e-ticaret sistemi tasarla, 3 ana servisi ve sorumluluklarını belirle.
-```
-```
-Kafka nasıl çalışır? Ne zaman REST API'leri yerine Kafka kullanmalıyım?
-```
-```
-API Gateway ile Service Registry arasındaki fark nedir?
-```
-```
-Spring Boot'ta Resilience4j kullanarak Circuit Breaker nasıl implement edilir?
-```
-```
-Etkinlik odaklı sistemlerin mikroservislerde nasıl decoupling sağladığını açıkla.
-```
-```
-Üretime güncellemeleri güvenli bir şekilde dağıtmak için bazı stratejiler nelerdir?
-```
-```
-Dağıtık bir sistemde mikroservisleri nasıl izlerim?
-```
-```
-ChatGPT'ye güvenli bir giriş uç noktası oluşturması için kullanabileceğim bir prompt oluştur.
-```
-```
-Spring Boot uygulaması için üretime uygun bir Dockerfile almak için nasıl etkili bir prompt yazabilirim?
-```
-```
-Few-shot prompting nedir ve ne zaman kullanmalıyım?
-```
-```
-Bir OpenAPI spesifikasyonu + controller + servis oluşturmak için çok adımlı bir prompt örneği ver.
-```
-
-## Öğren:
-
-- Clean Architecture prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
-- Domain-Driven Design (DDD) temelleri
-- Event-driven mimari: asenkron mesajlaşma, event sourcing
-- Apache Kafka veya RabbitMQ ile pub/sub sistemleri
-- Mikroservisler: sınırlar, iletişim, servis keşfi
-- API Gateway deseni ve araçları (ör. Spring Cloud Gateway)
-- Circuit Breaker deseni ve Resilience4j veya Hystrix kullanımı
-- Servis Kaydı (ör. Eureka), Yük Dengeleme ve Hata Toleransı
-- İleri seviye dağıtım: Blue/Green, Canary sürümleri, Özellik bayrakları (Feature flags)
-- Kubernetes (isteğe bağlı ileri seviye)
-
-
-## Mini Uygulama:
+**Mini App:**
 > `Event-Driven Order Management System`
-> - Sipariş verme servisi Kafka'ya yayın yapar
-> - Envanter servisi dinler ve stoğu günceller
-> - API Gateway kullanarak halka açık uç noktalar oluşturulur
-> - Envanter kontrolü uç noktasına Circuit Breaker eklenir
+> - Place order service publishes to Kafka
+> - Inventory service listens and updates stock
+> - Use API Gateway to expose public endpoints
+> - Add Circuit Breaker for inventory check endpoint
+> - Write and refine prompts to generate full features using ChatGPT (e.g., login flow, Swagger docs, Dockerfile)
 
+**AI Prompts:**
+```
+Explain Clean Architecture with a practical Java + Spring Boot example.
+```
+```
+Design a microservices-based e-commerce system with 3 core services and their responsibilities.
+```
+```
+How does Kafka work? When should I use it over REST APIs?
+```
+```
+What's the difference between API Gateway and Service Registry?
+```
+```
+Show me how to implement a Circuit Breaker in Spring Boot using Resilience4j.
+```
+```
+Explain how event-driven systems help with decoupling in microservices.
+```
+```
+What are some strategies for safely deploying updates to production?
+```
+```
+How do I monitor microservices in a distributed system?
+```
+```
+Generate a prompt I can use to ask ChatGPT to build a secure login endpoint with JWT in Java.
+```
+```
+How can I write an effective prompt to get a production-ready Dockerfile for a Spring Boot app?
+```
+```
+What is few-shot prompting and when should I use it?
+```
+```
+Give an example of a multi-step prompt for generating an OpenAPI spec + controller + service.
+```
 
-**Yapay Zeka Komutları (AI Prompts):**
+**Learn:**
+- Clean Architecture principles: separation of concerns, layers, use cases
+- Domain-Driven Design (DDD) fundamentals
+- Event-driven architecture: async messaging, event sourcing
+- Apache Kafka or RabbitMQ for pub/sub systems
+- Microservices: boundaries, communication, service discovery
+- API Gateway pattern and tools (e.g., Spring Cloud Gateway)
+- Circuit Breaker pattern with Resilience4j or Hystrix
+- Service Registry (e.g., Eureka), Load Balancing, and Fault Tolerance
+- Advanced deployment: Blue/Green, Canary releases, Feature flags
+- Kubernetes (optional advanced)
+
+**Mini App:**
+> `Event-Driven Order Management System`
+> - Place order service publishes to Kafka
+> - Inventory service listens and updates stock
+> - Use API Gateway to expose public endpoints
+> - Add Circuit Breaker for inventory check endpoint
+
+**AI Prompts:**
 ```
-Clean Architecture yapısını pratik bir Java + Spring Boot örneğiyle açıklayın.
+Explain Clean Architecture with a practical Java + Spring Boot example.
 ```
 ```
-3 ana servisi ve bunların sorumluluklarını içeren mikro hizmet tabanlı bir e-ticaret sistemi tasarlayın.
+Design a microservices-based e-commerce system with 3 core services and their responsibilities.
 ```
 ```
-Kafka nasıl çalışır? Ne zaman REST API'leri yerine kullanmalıyım?
+How does Kafka work? When should I use it over REST APIs?
 ```
 ```
-API Gateway ile Service Registry arasındaki fark nedir?
+What's the difference between API Gateway and Service Registry?
 ```
 ```
-Spring Boot'ta Resilience4j kullanarak bir Circuit Breaker nasıl implement edilir?
+Show me how to implement a Circuit Breaker in Spring Boot using Resilience4j.
 ```
 ```
-Olay odaklı sistemler, mikro hizmetlerde nasıl ayrıştırmaya yardımcı olur?
+Explain how event-driven systems help with decoupling in microservices.
 ```
 ```
-Üretim ortamına güncellemeleri güvenli bir şekilde dağıtmak için hangi stratejiler kullanılır?
+What are some strategies for safely deploying updates to production?
 ```
 ```
-Dağıtık bir sistemde mikro hizmetleri nasıl izlerim?
+How do I monitor microservices in a distributed system?
 ```
 
 - Clean Architecture
-- Olay Odaklı Sistemler (Kafka, RabbitMQ)
-- Mikro Hizmetler (Microservices)
+- Event-driven systems (Kafka, RabbitMQ)
+- Microservices
 - API Gateway & Circuit Breakers
 
 **AI Prompts:**
 ```
-Clean Architecture yapısını bir Java örneğiyle açıklayın.
+Explain Clean Architecture with a Java example.
 ```
 ```
-Mikroservisler ile monolitlerin avantajları ve dezavantajları nelerdir?
+What are the pros/cons of microservices vs monoliths?
 ```
 
 ---
 
-> Bu yol haritası statik değildir. İhtiyacınız olduğunda, ihtiyacınız olanı öğrenin. İnşa edin, sorun, yineleyin. Her adımda AI'nin rehberlik etmesine ve çalışmanızı gözden geçirmesine izin verin.
+> This roadmap is not static. Learn what you need, when you need it. Build, ask, iterate. Let AI guide and review your work at every step.
 
 ---
 
-## Katkıda Bulun
-Bu yol haritasını forklamaktan ve geliştirmekten çekinmeyin. Proje fikirlerinizi paylaşın, eksik içerikleri düzeltin ve sizin için iyi çalışan AI komutlarını önerin!
+## Contribute
+Feel free to fork and improve this roadmap. Share project ideas, fix missing content, and suggest AI prompts that worked well for you!
