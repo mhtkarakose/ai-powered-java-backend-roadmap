@@ -16,7 +16,7 @@ Haydi başlayalım!
 **Öğren:**
 - Prompt Engineering nedir ve geliştiriciler için neden önemlidir?
 - Prompt türleri: zero-shot, few-shot, rol tabanlı ve bağlamsal (contextual) promptlar
-- Prompt zincirleme (prompt chaining) ve yapay zekâyı adım adım yönlendirme
+- Prompt Chaining ve yapay zekâyı adım adım yönlendirme
 - Sonuçlar yeterli olmadığında AI promptlarını hata ayıklama (debugging)
 
 **Mini Uygulama:**
@@ -45,10 +45,10 @@ Bu yol haritası, projeler üzerinden öğrenmek isteyen modern backend gelişti
 ## 2. Web Nasıl Çalışır?
 
 **Öğren:**
-- DNS, IP ve alan adı sistemleri
+- DNS, IP ve Domain sistemleri
 - HTTP, HTTPS protokolleri
-- Tarayıcı - sunucu iletişimi
-- İstek/yanıt döngüsü (request/response cycle)
+- Tarayıcı - Sunucu iletişimi
+- Request/Response döngüsü 
 - Web sunucuları (Nginx, Apache)
 
 **Mini Uygulama:**
@@ -65,7 +65,7 @@ HTTP durum kodları nelerdir?
 ```
 ```
 CORS nedir?  
-Frontend ve backend iletişiminde neden CORS hataları alırız?
+Frontend ve Backend iletişiminde neden CORS hataları alırız?
 ```
 ```
 CDN nasıl çalışır?  
@@ -79,7 +79,7 @@ Ne zaman ve neden bir CDN kullanmalıyım?
 
 **Öğren:**
 - Git temelleri: `init`, `clone`, `add`, `commit`, `push`, `pull`, `merge`
-- Dallandırma stratejileri (branching strategy)
+- Branching stratejileri 
 - `.gitignore`, rebase, stash kavramları
 
 **Mini Uygulama:**
@@ -100,15 +100,15 @@ Git rebase ile merge arasındaki farkı bir örnekle açıkla.
 
 **Öğren:**
 - Java sözdizimi ve türler (primitives, wrappers)
-- Sınıflar ve nesneler
+- Sınıflar ve Nesneler (Classes and Objects)
 - Kalıtım (inheritance), çok biçimlilik (polymorphism), kapsülleme (encapsulation), soyutlama (abstraction)
-- İstisna yönetimi (try-catch-finally, özel istisnalar)
+- İstisna yönetimi (Exception handling): try-catch-finally, özel istisnalar
 - Java Koleksiyonları (List, Set, Map)
 - Arayüzler (interfaces) vs soyut sınıflar (abstract classes)
 - Java erişim denetleyicileri (public, private, protected)
 - Yapıcılar (constructors), `this` ve `super` anahtar kelimeleri
-- Yöntem aşırı yüklemesi (method overloading) ve geçersiz kılma (overriding)
-- Statik (static) ve örnek (instance) üyeler
+- Overloading ve Overfitting kavramları
+- Static ve instance üyeler
 - Final anahtar kelimesinin kullanımı
 - Java Bellek Modeli (stack ve heap temel farkları)
 
@@ -129,10 +129,10 @@ Java'da istisnaları (exceptions) nasıl düzgün bir şekilde yönetmeliyim?
 Java'da arayüzler (interfaces) ve soyut sınıflar (abstract classes) ne zaman kullanılmalı? Örnekler ver.
 ```
 ```
-Yöntem aşırı yüklemesi (method overloading) ve geçersiz kılma (method overriding) nasıl çalışır? Örneklerle açıkla.
+Overloading ve Overfitting nasıl çalışır? Örneklerle açıkla.
 ```
 ```
-Java'nın bellek modeli nesne oluşturma ve çöp toplama (garbage collection) üzerinde nasıl bir etki yapar?
+Java'nın bellek modeli nesne oluşturma ve çöp toplama (object creation and garbage collection) üzerinde nasıl bir etki yapar?
 ```
 ```
 HashMap, LinkedHashMap ve TreeMap arasındaki farkları ve kullanım senaryolarını karşılaştır.
@@ -154,7 +154,7 @@ OOP prensiplerine göre küçük bir kütüphane sistemi için UML sınıf diyag
 - ResponseEntity ve özel yanıtlar
 - Spring Data ile sayfalama (pagination) ve sıralama (sorting)
 - SpringDoc ile Swagger/OpenAPI belgeleri
-- REST API'leri için istisna (exception) yönetimi
+- REST API'leri için exception yönetimi
 
 **Mini Uygulamalar:**
 > 1. `Kitapçı API` — Kitaplar için tam CRUD işlemleri
@@ -172,7 +172,7 @@ Spring Boot'ta ResponseEntity kullanarak özel durum kodu ve gövde (body) nası
 Spring Boot API'si için Swagger belgelendirmesi oluştur.
 ```
 ```
-Spring Boot'ta katmanlı mimariyi (layered architecture) yapılandırmak için en iyi uygulama nedir?
+Spring Boot'ta layered architecture yapılandırmak için en iyi uygulama nedir?
 ```
 ```
 Spring Data ile bir REST endpoint'inde sayfalama ve sıralama nasıl uygulanır?
@@ -204,14 +204,14 @@ Spring API'm için Swagger belgelendirmesi oluştur.
 
 **Öğren:**
 - SQL temelleri: SELECT, INSERT, UPDATE, DELETE
-- İleri düzey sorgular: JOIN'ler, GROUP BY, alt sorgular, indeksler
+- İleri düzey sorgular: JOIN'ler, GROUP BY, subqueries, indexes
 - PostgreSQL / MySQL kurulumu ve CLI araçları
 - Veritabanı tasarımı: normalizasyon, ER diyagramları, ilişkiler
 - Spring Data JPA entegrasyonu
 - JPA entity ilişkileri: OneToMany, ManyToMany, OneToOne
 - Lazy vs Eager loading
 - İşlemler (transactions), izolasyon seviyeleri ve ACID prensipleri
-- Sorgu optimizasyonu ve indeksleme stratejileri
+- Sorgu optimizasyonu (Query optimization ) ve indeksleme stratejileri
 
 **Mini Uygulama:**
 > `Kütüphane Yönetim Sistemi`
@@ -435,8 +435,8 @@ Gelen request body'lerini doğrulamanın en iyi yolu nedir?
 ## 10. Test Etme ve Mocking
 
 **Öğren:**
-- Birim testi prensipleri: düzenle-işlem-yargıla (arrange-act-assert)
-- Entegrasyon testi vs birim testi
+- Birim testi prensipleri: arrange-act-assert
+- Entegrasyon testi vs birim testi (Integration vs unit testing)
 - JUnit 5 ile test yazma
 - Bağımlılıkları mock'lamak için Mockito kullanımı
 - Spring bileşenlerini test etme: controller'lar, servisler, repository'ler
@@ -601,15 +601,15 @@ Bellek içi (in-memory) ve dağıtık (distributed) önbellek arasındaki fark n
 ## Öğrenmeye Devam Et
 
 **Öğren:**
-- Temiz Mimari (Clean Architecture) prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
+- Clean Architecture prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
 - Domain-Driven Design (DDD) temelleri
-- Etkinlik odaklı mimari: asenkron mesajlaşma, event sourcing
+- Event-driven architecture: asenkron mesajlaşma, event sourcing
 - Apache Kafka veya RabbitMQ ile pub/sub sistemleri
 - Mikroservisler: sınırlar, iletişim, servis keşfi
 - API Gateway deseni ve araçları (ör. Spring Cloud Gateway)
 - Circuit Breaker deseni ve Resilience4j veya Hystrix kullanımı
 - Servis Kaydı (ör. Eureka), Yük Dengeleme ve Hata Toleransı
-- İleri seviye dağıtım: Blue/Green, Canary sürümleri, Özellik bayrakları (Feature flags)
+- Advanced deployment: Blue/Green, Canary sürümleri, Özellik bayrakları (Feature flags)
 - Kubernetes (isteğe bağlı ileri seviye)
 - **Prompt Engineering**: Yapay zeka destekli yazılım geliştirme için prompt oluşturmayı öğrenmek
   - Bağlamsal prompt tasarımı
@@ -628,7 +628,7 @@ Bellek içi (in-memory) ve dağıtık (distributed) önbellek arasındaki fark n
 
 **Yapay Zeka Komutları (AI Prompts):**
 ```
-Temiz Mimariyi pratik bir Java + Spring Boot örneği ile açıkla.
+Clean Architecture yapısını pratik bir Java + Spring Boot örneği ile açıkla.
 ```
 ```
 Mikroservis tabanlı bir e-ticaret sistemi tasarla, 3 ana servisi ve sorumluluklarını belirle.
@@ -666,9 +666,9 @@ Bir OpenAPI spesifikasyonu + controller + servis oluşturmak için çok adımlı
 
 ## Öğren:
 
-- Temiz Mimari (Clean Architecture) prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
+- Clean Architecture prensipleri: sorumlulukların ayrılması, katmanlar, kullanım senaryoları
 - Domain-Driven Design (DDD) temelleri
-- Etkinlik odaklı mimari: asenkron mesajlaşma, event sourcing
+- Event-driven mimari: asenkron mesajlaşma, event sourcing
 - Apache Kafka veya RabbitMQ ile pub/sub sistemleri
 - Mikroservisler: sınırlar, iletişim, servis keşfi
 - API Gateway deseni ve araçları (ör. Spring Cloud Gateway)
@@ -688,7 +688,7 @@ Bir OpenAPI spesifikasyonu + controller + servis oluşturmak için çok adımlı
 
 **Yapay Zeka Komutları (AI Prompts):**
 ```
-Temiz Mimari'yi pratik bir Java + Spring Boot örneğiyle açıklayın.
+Clean Architecture yapısını pratik bir Java + Spring Boot örneğiyle açıklayın.
 ```
 ```
 3 ana servisi ve bunların sorumluluklarını içeren mikro hizmet tabanlı bir e-ticaret sistemi tasarlayın.
@@ -712,14 +712,14 @@ Olay odaklı sistemler, mikro hizmetlerde nasıl ayrıştırmaya yardımcı olur
 Dağıtık bir sistemde mikro hizmetleri nasıl izlerim?
 ```
 
-- Temiz Mimari (Clean Architecture)
+- Clean Architecture
 - Olay Odaklı Sistemler (Kafka, RabbitMQ)
 - Mikro Hizmetler (Microservices)
 - API Gateway & Circuit Breakers
 
 **AI Prompts:**
 ```
-Temiz Mimari'yi (Clean Architecture) bir Java örneğiyle açıklayın.
+Clean Architecture yapısını bir Java örneğiyle açıklayın.
 ```
 ```
 Mikroservisler ile monolitlerin avantajları ve dezavantajları nelerdir?
